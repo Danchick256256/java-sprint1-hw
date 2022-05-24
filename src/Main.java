@@ -15,24 +15,12 @@ public class Main {
 
             if (userInput == 1) {
                 // Step goal
-                System.out.print("Сколько шагов вы хотите пройти сегодня? ");
-                stepDayGoal = scanner.nextInt();
-                StepTracker.stepGoal(stepDayGoal);
+                stepDayGoal = StepTracker.stepGoal(scanner);
+                System.out.println(stepDayGoal);
+
             } else if (userInput == 2) {
                 // Step input
-                System.out.println("Введите число месяца 1-30 ");
-                int date = scanner.nextInt();
-
-                System.out.println("Введите месяц: 1-ЯНВАРЬ, 2-ФЕВРАЛЬ, 3-МАРТ, 4-АПРЕЛЬ, 5-МАЙ, 6-ИЮНЬ, 7-ИЮЛЬ, 8-АВГУСТ, 9-СЕНТЯБРЬ, 10-ОКТЯБРЬ, 11-НОЯБРЬ, 12-ДЕКАБРЬ? ");
-                int month = scanner.nextInt();
-
-
-                System.out.println("Введите количество шагов:");
-                int newSteps = scanner.nextInt();
-
-                monthAndDate[date - 1][month - 1] = monthAndDate[date - 1][month - 1] + newSteps;
-                System.out.println("Обновлено, Пройдено " + newSteps + " шагов");
-                converter.convert(newSteps);
+                converter.convert(scanner, monthAndDate);
 
             } else if (userInput == 3) {
                 // Show statistic

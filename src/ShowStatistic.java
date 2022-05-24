@@ -25,7 +25,7 @@ public class ShowStatistic {
                     bestSeries = series;
                 }
                 sumAllSteps = sumAllSteps + monthAndDate[i][j];
-                System.out.print((i + 1) + "день:" + monthAndDate[i][j] + ", "); // show steps in day
+                System.out.print((i + 1) + " день: " + monthAndDate[i][j] + ", "); // show steps in day
             }
         }
         System.out.println("Сумма шагов за месяц: " + sumAllSteps);
