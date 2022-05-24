@@ -28,7 +28,6 @@ public class Main {
             } else if (userInput == 0) {
                 break;
             }
-
         }
         System.out.println("Программа завершена");
     }
