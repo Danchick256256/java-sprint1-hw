@@ -20,7 +20,7 @@ public class Main {
 
             } else if (userInput == 2) {
                 // Step input
-                converter.convert(scanner, monthAndDate);
+                StepInput.stepInput(scanner, monthAndDate);
 
             } else if (userInput == 3) {
                 // Show statistic
