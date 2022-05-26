@@ -20,11 +20,11 @@ public class Main {
 
             } else if (userInput == 2) {
                 // Step input
-                StepInput.stepInput(scanner, monthAndDate);
+                StepTracker.stepInput(scanner, monthAndDate);
 
             } else if (userInput == 3) {
                 // Show statistic
-                ShowStatistic.showStatistic(scanner, monthAndDate, stepDayGoal);
+                StepTracker.showStatistic(scanner, monthAndDate, stepDayGoal);
             } else if (userInput == 0) {
                 break;
             }
